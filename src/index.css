@@ -121,7 +121,7 @@
 }
 @font-face {
   font-family: 'Barmo';
-  src: url('/fonts/barmo.otf') format('opentype');
+  src: url('../src/fonts/Barmo.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
