@@ -1,5 +1,5 @@
 [phases.setup]
 nixpkgsArchive = "https://github.com/NixOS/nixpkgs/archive/refs/tags/23.11.tar.gz"
 
-[phases.setup.environment]
+[variables]
 NODE_VERSION = "22.12.0"
