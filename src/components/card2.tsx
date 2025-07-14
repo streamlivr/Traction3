@@ -16,7 +16,7 @@ const Card2 = ({ title, children, icon, direction }: cardProps) => {
                 {children}
             </div>
             <div className={`${direction == 'left' ? 'md:order-1 order-2' : ''} w-full max-w-xl  `}>
-                <img src={icon} alt="" className="min-w-full h-full rounded-3xl object-cover border shadow-2xl shadow-secondary/40 border-secondary"/>
+                <img src={icon} alt="" className="min-w-full h-full max-sm:h-[200px] rounded-3xl object-cover border shadow-2xl shadow-secondary/40 border-secondary"/>
             </div>
        </div>
     );

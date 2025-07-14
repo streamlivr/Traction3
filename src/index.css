@@ -121,13 +121,13 @@
 }
 @font-face {
   font-family: 'Barmo';
-  src: url('../src/fonts/barmo.otf') format('opentype');
+  src: url('/fonts/barmo.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @theme{
-    /* --font-barmo:  "Barmo", sans-serif; */
+    --font-barmo:  "Barmo", sans-serif;
     --font-lufga:  "Lufga", sans-serif;
     --color-black: #000000;
     --color-secondary: #802966;
@@ -159,11 +159,7 @@
 }
 
 @layer components {
-  .font-barmo {
-    font-family: 'Barmo', sans-serif
-  }
 }
-
 @utility scroll-container {
   @apply flex overflow-hidden whitespace-nowrap relative;
 }
