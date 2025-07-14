@@ -127,7 +127,7 @@
 }
 
 @theme{
-    --font-barmo:  "Barmo", sans-serif;
+    /* --font-barmo:  "Barmo", sans-serif; */
     --font-lufga:  "Lufga", sans-serif;
     --color-black: #000000;
     --color-secondary: #802966;
@@ -159,13 +159,17 @@
 }
 
 @layer components {
+  .font-barmo {
+    font-family: 'Barmo', sans-serif
+  }
 }
+
 @utility scroll-container {
   @apply flex overflow-hidden whitespace-nowrap relative;
 }
 
 @utility scroll-text {
-  @apply inline-block whitespace-nowrap animate-[scroll-text_30s_linear_infinite];
+  @apply inline-block whitespace-nowrap animate-[scroll-text_15s_linear_infinite];
 }
 
 @utility scroll-text2 {
