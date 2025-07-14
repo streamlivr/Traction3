@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: 'Lufga';
+  src: url('../src/fonts/LufgaRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lufga';
+  src: url('../src/fonts/LufgaItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lufga';
+  src: url('../src/fonts/LufgaThin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lufga';
+  src: url('../src/fonts/LufgaThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lufga';
+  src: url('../src/fonts/LufgaExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lufga';
+  src: url('../src/fonts/LufgaExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lufga';
+  src: url('../src/fonts/LufgaLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lufga';
+  src: url('../src/fonts/LufgaLightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lufga';
+  src: url('../src/fonts/LufgaMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lufga';
+  src: url('../src/fonts/LufgaMediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lufga';
+  src: url('../src/fonts/LufgaSemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lufga';
+  src: url('../src/fonts/LufgaSemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lufga';
+  src: url('../src/fonts/LufgaBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lufga';
+  src: url('../src/fonts/LufgaBoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lufga';
+  src: url('../src/fonts/LufgaExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lufga';
+  src: url('../src/fonts/LufgaExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lufga';
+  src: url('../src/fonts/LufgaBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lufga';
+  src: url('../src/fonts/LufgaBlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Barmo';
+  src: url('../src/fonts/barmo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme{
+    --font-barmo:  "Barmo", sans-serif;
+    --font-lufga:  "Lufga", sans-serif;
+    --color-black: #000000;
+    --color-secondary: #802966;
+    --color-primary: #Cb5499;
+    --color-primary-100: #E5097F;
+}
+
+  body {
+    font-family: "Lufga", sans-serif;
+  }
+
+
+  @keyframes scroll-text {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+  @keyframes scroll-text2 {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-120%);
+  }
+}
+
+@layer components {
+}
+@utility scroll-container {
+  @apply flex overflow-hidden whitespace-nowrap relative;
+}
+
+@utility scroll-text {
+  @apply inline-block whitespace-nowrap animate-[scroll-text_30s_linear_infinite];
+}
+
+@utility scroll-text2 {
+  @apply inline-block whitespace-nowrap animate-[scroll-text2_20s_linear_infinite];
+}
