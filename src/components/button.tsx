@@ -9,7 +9,7 @@ interface ButtonProps{
 export const Button = ({ value, otherStyles, position }: ButtonProps) => {
 
   const handleRedirect = () => {
-     window.open("https://app.raphinaai.com", "_blank");
+     window.open("https://calendly.com/joshua-traction3", "_blank");
   }
    
     return (

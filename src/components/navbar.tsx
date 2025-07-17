@@ -22,7 +22,7 @@ const NavBar = ( ) => {
         }`}
       >
         <div className="w-full mx-auto px-4 py-1 md:px-4">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-16" data-aos="fade-down">
             <div className="flex items-center">
               <Link to='/'>
                 <div className="flex-shrink-0 flex items-center justify-center gap-1.5">
@@ -35,7 +35,6 @@ const NavBar = ( ) => {
               </Link>
             </div>
             <div className="flex items-center gap-2 lg:gap-5">
-
               <div className="flex justify-center items-center gap-2 text-white max-md:hidden">
                 <NavLink
                   to="/"
@@ -56,8 +55,6 @@ const NavBar = ( ) => {
                   Portfoilio
                 </NavLink>
               </div>
-
-
              {/* <Button value='Launch App' onclick={}/> */}
               <button
                 onClick={toggleMenu}

@@ -10,7 +10,7 @@ interface cardProps{
 
 const Card = ({ title, subtitle, icon}: cardProps) => {
     return (
-        <div className='w-full min-h-[200px] flex flex-col justify-center items-center max-w-[300px] h-full px-2 py-3 border border-secondary bg-secondary/20 rounded-2xl relative backdrop-blur-xs'>
+        <div className='w-full min-h-[200px] flex flex-col justify-center items-center max-w-[300px] h-full px-2 py-3 border border-secondary bg-secondary/20 rounded-2xl relative backdrop-blur-xs' data-aos="flip-left" data-aos-duration="2000">
             <div className='flex flex-col justify-center items-center'>
                 <div className="rounded-full py-3">
                     {icon}
