@@ -145,7 +145,7 @@
     transform: translateX(50%);
   }
   100% {
-    transform: translateX(-250%);
+    transform: translateX(-700%);
   }
 }
 
@@ -165,7 +165,7 @@
 }
 
 @utility scroll-text {
-  @apply inline-block whitespace-nowrap animate-[scroll-text_15s_linear_infinite];
+  @apply inline-block whitespace-nowrap animate-[scroll-text_20s_linear_infinite];
 }
 
 @utility scroll-text2 {
